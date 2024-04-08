@@ -1,0 +1,518 @@
+*,
+*::after *::before {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  z-index: 9999;
+  /* display: flex; */
+}
+
+/* .navbar .my-img {
+  width: 10%;
+} */
+
+.navbar .my-img img {
+  width: 100%;
+  display: block;
+}
+
+.my-img {
+  position: relative;
+}
+
+.my-img .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  /* background-color: violet; */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li {
+  /* background-color: rgb(4, 255, 0); */
+  padding: 6px 30px;
+  width: 25%;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.navbar ul:hover a {
+  color: rgb(255, 255, 255);
+}
+
+.navbar a {
+  /* width: 100%; */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  /* background-color: rgb(145, 7, 169); */
+}
+
+
+
+/* end navbar */
+
+/* start header */
+
+#header {
+  /* width: 95%; */
+  /* margin: 0px auto; */
+  padding-top: 50px;
+  text-align: center;
+}
+
+#header h1 {
+  color: rgb(255, 100, 100);
+}
+
+#header p {
+  color: rgb(255, 200, 200);
+}
+
+#header .main-img {
+  position: relative;
+
+  margin: auto;
+}
+
+.main-img .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to top, black, transparent),
+    linear-gradient(to bottom, black, transparent);
+}
+
+#header .main-img img {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+/* end header */
+
+/* start about */
+
+/* #about {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+} */
+
+#about .name h2 {
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  padding-bottom: 20px;
+  width: 200px;
+
+}
+
+#about .name p {
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+#about .skills h2 {
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  padding-bottom: 20px;
+  width: 200px;
+}
+
+#about .skills p {
+  color: #616161;
+}
+
+#about .skills .rate-1 {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to right, #616161 65%, white 35%);
+}
+
+#about .skills .rate-2 {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to right, #616161 95%, white 5%);
+}
+
+#about .skills .rate-3 {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(to right, #616161 75%, white 25%);
+}
+
+#about .skills .score {
+  background-color: rgb(241, 241, 241);
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 1.5rem 0;
+}
+
+.skills .score .num {
+  margin: 2.5rem 0;
+
+}
+
+.skills .score .num h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.skills .score .num p {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.skills button {
+  /* display: inline-block; */
+  color: rgb(0, 0, 0);
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.skills button i {
+  margin-right: 5px;
+}
+
+.my-price {
+  text-align: center;
+
+}
+
+.price {
+  position: relative;
+  z-index: 66;
+  margin: 20px 0;
+  background-image: linear-gradient(to top, rgb(204, 193, 193), transparent);
+  background-color: white;
+}
+
+/* .price .layer {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.2);
+} */
+
+.price:hover .layer {
+  background-color: rgb(0, 0, 0, 0);
+}
+
+
+.price h2 {
+  background-color: rgb(79, 79, 79);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding: 2rem 0;
+
+}
+
+.price p {
+  border-bottom: rgba(79, 79, 79, 0.2) solid 1px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.price span {
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  /* padding: 30px 0; */
+}
+
+.price .no-border {
+  border: none;
+}
+
+.price .btn {
+  background-color: rgb(241, 241, 241);
+  padding: 2rem 0;
+}
+
+
+.price .btn button {
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.price .btn button:hover {
+  background-color: black;
+  color: white;
+}
+
+.reputation h2 {
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+
+.feedback .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+  /* background-color: aquamarine; */
+
+}
+
+.feedback .container .avatar {
+  width: 120px;
+  /* background-color: violet; */
+
+}
+
+.feedback .container .avatar img {
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.feedback .container .contain {
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.25rem;
+
+}
+
+.feedback .container .comment-1 p {
+  /* background-color: yellowgreen; */
+  color: #616161;
+  margin: 0;
+}
+
+.feedback .container .comment-2 p {
+  /* background-color: yellowgreen; */
+  color: #616161;
+  margin: 0;
+
+}
+
+.feedback .container .comment-3 p {
+  /* background-color: yellowgreen; */
+  color: #616161;
+  margin: 0;
+}
+
+/* end about */
+
+/* start my photo */
+
+#my-photos {
+  width: 90%;
+  margin: auto;
+
+}
+
+#my-photos h2 {
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+#my-photos .container {
+
+  /* background-color: teal; */
+  padding-block: 1rem;
+
+  .item {
+    margin-block: 1rem;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* end my photo */
+
+/* start contact */
+
+#contact {
+  /* background-color: thistle; */
+  width: 90%;
+  margin: auto;
+}
+
+#contact h2 {
+  color: rgb(241, 241, 241);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  border-bottom: 1px solid rgb(117, 117, 117);
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+.contact-icon {
+  /* background-color: turquoise; */
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  margin-block: 1rem;
+}
+
+.contact-icon i {
+  font-size: 2.25rem;
+  color: white;
+}
+
+.contact-icon p {
+  font-size: .9375rem;
+  color: rgb(117, 117, 117);
+  line-height: 1.4375rem;
+  font-weight: 400;
+}
+
+#contact span {
+  font-size: .9375rem;
+  color: rgb(117, 117, 117);
+  line-height: 1.4375rem;
+  font-weight: 400;
+}
+
+#contact form {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem;
+  margin-block: 1.25rem;
+
+  input {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    line-height: 1.4375rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    icon {
+      font-size: 1.1rem;
+      color: black;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* end contact */
+
+/* footer */
+
+.footer {
+  /* background-color: blueviolet; */
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: rgb(75, 75, 75);
+    font-size: 1.25rem;
+    gap: .625rem;
+
+    span {
+      color: rgb(255, 100, 100);
+      cursor: pointer;
+      font-style: italic;
+    }
+  }
+
+}
+
+.footer i {
+  color: rgb(75, 75, 75);
+  font-size: 2.25rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+
+.footer i:hover {
+  color: rgb(117, 117, 117);
+}
+
+/* footer */
